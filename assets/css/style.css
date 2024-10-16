@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
   color: white;
   transition: opacity 0.8s ease-out, transform 0.8s ease-out,
     filter 0.8s ease-out;
@@ -48,6 +47,14 @@ body.loaded {
   display: flex;
   justify-content: space-between;
   border: 1px solid red;
+  font-family: "Poppins", sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: inherit; /* Mantém a cor de fundo atual */
+    background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
 main {
@@ -58,6 +65,7 @@ main {
 }
 
 #header-2 {
+  font-family: "Poppins", sans-serif;
   width: 100%;
   flex-direction: column;
   text-align: center;
@@ -116,6 +124,8 @@ button.navbutton-contact {
   color: black; /* Texto branco */
 }
 
+
+
 button.navbutton-contact:hover {
   background: var(--background-color);
   border: 1.5px solid rgb(5, 5, 5);
@@ -170,6 +180,69 @@ button.navbutton-contact:hover {
 
 .show {
   opacity: 1;
-    filter: blur(0);
+  filter: blur(0);
   transition: all 1s;
+}
+
+#about {
+  font-family: "Inter", sans-serif;
+  border: solid salmon 1px;
+  display: flex;
+  /* height: 100vh; */
+  justify-content: center;
+}
+
+#dabout {
+  width: 100%;
+  max-width: 706px;
+  text-align: center;
+  border: solid salmon 1px;
+}
+
+#experience {
+  font-family: "Inter", sans-serif;
+  border: solid salmon 1px;
+  display: flex;
+  /* height: 100vh; */
+  justify-content: center;
+}
+
+#eexperience {
+  width: 100%;
+  max-width: 706px;
+  text-align: center;
+  border: solid salmon 1px;
+}
+
+#projects {
+  font-family: "Inter", sans-serif;
+  border: solid salmon 1px;
+  display: flex;
+  /* height: 100vh; */
+  justify-content: center;
+}
+
+#pprojects{
+  width: 100%;
+  max-width: 706px;
+  text-align: center;
+  border: solid salmon 1px;
+}
+
+.audio {
+  justify-content: center;
+display: flex;
+bottom: 0;
+opacity: 0.5;
+margin-top: 50px;
+}
+
+footer {
+  justify-content: center;
+  display: flex;
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
 }
