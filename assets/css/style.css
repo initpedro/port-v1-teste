@@ -4,31 +4,45 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   color: white;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out,
+    filter 0.8s ease-out;
 }
 
 :root {
   --background-color: #000000;
+  --surface-color-hover: #ffffff;
+  --memoji-color: #1a1a1a;
 }
 
 body {
   background-color: var(--background-color);
   background-image: url(../img/linhas.svg);
   background-size: cover;
-  border: solid 1px purple;
+  border: solid 1px yellow;
   /* display: flex;
   justify-content: center;
   align-items: center; */
-  height: 300px;
+  height: 100vh;
+  opacity: 0;
+  filter: blur(10px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out,
+    filter 0.3s ease-out;
 }
 
-#header img {
+body.loaded {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+#header-1 img {
   width: 70px;
   height: 70px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   vertical-align: middle;
 }
 
-#header {
+#header-1 {
   text-align: center;
   align-items: center;
   display: flex;
@@ -36,31 +50,126 @@ body {
   border: 1px solid red;
 }
 
-nav {
-  text-decoration: none;
-}
-
 main {
-  width: 1120px;
+  width: 100%;
   /* border: 1px solid red; */
   margin: auto;
+  max-width: 1120px;
 }
 
-#mid {
-  width: 703px;
-  justify-content: center;
-  display: flex;
+#header-2 {
+  width: 100%;
   flex-direction: column;
   text-align: center;
-  border: 1px solid pink;
+  border: 1px solid green;
+
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
 }
 
-h1 {
-  font-size: 63px;
-  padding: 0;
-  margin: 0;
+button.contact {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 10px;
+  cursor: pointer;
+  border-radius: 75px;
+  background-color: rgb(0, 0, 0); /* Fundo preto */
+  border: 1px solid rgb(255, 255, 255); /* Borda branca */
+  color: rgb(255, 255, 255); /* Texto branco */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
-h2 {
-  font-size: 26px;
+button.contact:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid rgb(5, 5, 5);
+  color: var(--background-color);
+}
+
+button.navbutton-about {
+  /* margin-top: 20px; */
+  padding: 7px 15px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: black; /* Fundo preto */
+  border: 1px solid white; /* Borda branca */
+  color: white; /* Texto branco */
+}
+
+button.navbutton-about:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid rgb(5, 5, 5);
+  color: var(--background-color);
+}
+
+button.navbutton-contact {
+  /* margin-top: 20px; */
+  padding: 7px 15px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255); /* Fundo preto */
+  border: 1px solid white; /* Borda branca */
+  color: black; /* Texto branco */
+}
+
+button.navbutton-contact:hover {
+  background: var(--background-color);
+  border: 1.5px solid rgb(5, 5, 5);
+  color: var(--surface-color-hover);
+}
+
+.topp {
+  width: 587px;
+  font-size: 16px;
+}
+
+.topp img {
+  width: 200px;
+  height: 200px;
+  background-color: var(--memoji-color);
+  border-radius: 50%;
+  border: solid 1px;
+}
+
+.navbutton-about {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.navbutton-about:hover {
+  transform: scale(1.05); /* Desloca o menu para cima ao passar o mouse */
+  opacity: 0.9;
+}
+
+.navbutton-contact {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.navbutton-contact:hover {
+  transform: scale(1.05); /* Desloca o menu para cima ao passar o mouse */
+  opacity: 0.9;
+}
+
+.contact {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.contact:hover {
+  transform: scale(1.05); /* Desloca o menu para cima ao passar o mouse */
+  opacity: 0.9;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+    filter: blur(0);
+  transition: all 1s;
 }
