@@ -130,6 +130,11 @@ button.navbutton-contact:hover {
   max-width: 587px;
 }
 
+.topp p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .topp img {
   width: 200px;
   height: 200px;
