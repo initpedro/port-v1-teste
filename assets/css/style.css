@@ -18,14 +18,10 @@ body {
   background-image: url(../img/linhas.svg);
   background-size: cover;
   border: solid 1px yellow;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   height: 100vh;
   opacity: 1;
   filter: blur(0px);
-  transition: opacity 0.3s ease-out, transform 0.3s ease-out,
-    filter 0.3s ease-out;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out, filter 0.3s ease-out;
 }
 
 body.loaded {
@@ -37,7 +33,6 @@ body.loaded {
 #header-1 img {
   width: 70px;
   height: 70px;
-  /* border: 1px solid green; */
   vertical-align: middle;
 }
 
@@ -46,12 +41,10 @@ body.loaded {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid red; */
   font-family: "Poppins", sans-serif;
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: inherit; /* Mantém a cor de fundo atual */
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
@@ -59,7 +52,6 @@ body.loaded {
 
 main {
   width: 100%;
-  /* border: 1px solid red; */
   margin: auto;
   max-width: 1120px;
 }
@@ -69,12 +61,11 @@ main {
   width: 100%;
   flex-direction: column;
   text-align: center;
-  /* border: 1px solid green; */
-
   display: flex;
   align-items: center;
   box-sizing: border-box;
   padding: 20px;
+  
 }
 
 button.contact {
@@ -83,9 +74,9 @@ button.contact {
   font-size: 10px;
   cursor: pointer;
   border-radius: 75px;
-  background-color: rgb(0, 0, 0); /* Fundo preto */
-  border: 1px solid rgb(255, 255, 255); /* Borda branca */
-  color: rgb(255, 255, 255); /* Texto branco */
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
@@ -96,38 +87,40 @@ button.contact:hover {
   color: var(--background-color);
 }
 
-button.navbutton-about {
-  /* margin-top: 20px; */
+button.navbutton-about,
+button.navbutton-contact {
   padding: 7px 15px;
   font-size: 13px;
   cursor: pointer;
   border-radius: 8px;
-  background-color: black; /* Fundo preto */
-  border: 1px solid white; /* Borda branca */
-  color: white; /* Texto branco */
+  border: 1px solid white;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button.navbutton-about {
+  background-color: black;
+  color: white;
 }
 
 button.navbutton-about:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid rgb(5, 5, 5);
   color: var(--background-color);
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
 button.navbutton-contact {
-  /* margin-top: 20px; */
-  padding: 7px 15px;
-  font-size: 13px;
-  cursor: pointer;
-  border-radius: 8px;
-  background-color: rgb(255, 255, 255); /* Fundo preto */
-  border: 1px solid white; /* Borda branca */
-  color: black; /* Texto branco */
+  background-color: rgb(255, 255, 255);
+  color: black;
 }
 
 button.navbutton-contact:hover {
   background: var(--background-color);
   border: 1.5px solid hsla(0, 0%, 0%, 0.842);
   color: hsla(0, 0%, 100%, 0.842);
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
 .topp {
@@ -145,30 +138,8 @@ button.navbutton-contact:hover {
   border: solid 1px;
 }
 
-.navbutton-about {
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.navbutton-about:hover {
-  transform: scale(1.05); /* Desloca o menu para cima ao passar o mouse */
-  opacity: 0.9;
-}
-
-.navbutton-contact {
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.navbutton-contact:hover {
-  transform: scale(1.05); /* Desloca o menu para cima ao passar o mouse */
-  opacity: 0.9;
-}
-
-.contact {
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
 .contact:hover {
-  transform: scale(1.05); /* Desloca o menu para cima ao passar o mouse */
+  transform: scale(1.05);
   opacity: 0.9;
 }
 
@@ -186,9 +157,7 @@ button.navbutton-contact:hover {
 
 #about {
   font-family: "Inter", sans-serif;
-  /* border: solid salmon 1px; */
   display: flex;
-  /* height: 100vh; */
   justify-content: center;
 }
 
@@ -196,37 +165,20 @@ button.navbutton-contact:hover {
   width: 100%;
   max-width: 706px;
   text-align: center;
-  /* border: solid salmon 1px; */
 }
 
-#experience {
-  font-family: "Inter", sans-serif;
-  /* border: solid salmon 1px; */
-  display: flex;
-  /* height: 100vh; */
-  justify-content: center;
-}
-
-#experience {
-  width: 100%;
-  max-width: 706px;
-  text-align: center;
-  /* border: solid salmon 1px; */
-}
-
+#experience,
 #projects {
   font-family: "Inter", sans-serif;
-  /* border: solid salmon 1px; */
   display: flex;
-  /* height: 100vh; */
   justify-content: center;
 }
 
+#experience,
 #pprojects {
   width: 100%;
   max-width: 706px;
   text-align: center;
-  /* border: solid salmon 1px; */
 }
 
 .audio {
@@ -247,34 +199,22 @@ h1 {
   text-transform: uppercase;
   color: hsla(67, 100%, 50%, 0.842);
   font-size: 45px;
+}
 
-  }
-  
-  #dabout h1 {
+#dabout h1,
+.grid-layout h1,
+#projects h1 {
   margin-top: 100px;
   margin-bottom: 30px;
 }
 
-.grid-layout h1 {
-margin-top: 100px;
-margin-bottom: 30px;
-}
-
-#projects h1 {
-margin-top: 100px;
-margin-bottom: 30px;
-}
-
 h2 {
-background: rgb(131,58,180);
-background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(253,29,29,1) 50%, #e1ff00d7 100%);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(253, 29, 29, 1) 50%, #e1ff00d7 100%);
 }
 
 #s-experience {
   font-family: "Inter", sans-serif;
-  /* border: solid salmon 1px; */
   display: flex;
-  /* height: 100vh; */
   justify-content: center;
 }
 
@@ -282,7 +222,6 @@ background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(253,29,29,1) 50%,
   width: 100%;
   max-width: 706px;
   text-align: center;
-  /* border: solid salmon 1px; */
 }
 
 #s-experience .grid-layout #experience .option-experience .activeExperience {
@@ -318,6 +257,7 @@ background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(253,29,29,1) 50%,
     width: 100%;
   }
 }
+
 #s-experience .grid-layout #experience .text-experience > div {
   display: flex;
   align-items: center;
