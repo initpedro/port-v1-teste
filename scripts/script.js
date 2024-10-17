@@ -42,3 +42,5 @@ window.addEventListener("load", function () {
     "2019 - 2023 (4 anos)"
   )
 })
+
+audioElement.play()
