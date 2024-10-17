@@ -29,16 +29,18 @@
             <button class="navbutton-about">About me</button></a
           >
           <a href="#contact"
-            ><a href="https://wa.me/+5534998731732" target="_blank"><button class="navbutton-contact">Contact</button></a
-          ></a>
+            ><a href="https://wa.me/+5534998731732" target="_blank"
+              ><button class="navbutton-contact">Contact</button></a
+            ></a
+          >
         </nav>
       </div>
       <div id="header-2">
         <div class="topp">
           <img src="../assets/img/memoji1.png" alt="memoji1" />
-          <h1>Pedro</h1>
-          <h2>I do Code & Chill 🍿</h2>
-          <p>
+          <h1 class="delaySmallReveal">Pedro</h1>
+          <h2 class="delaySmallReveal">I do Code & Chill 🍿</h2>
+          <p class="delaySmallReveal">
             Passionate software engineer focused on development dedicated to
             creating effective applications.
           </p>
@@ -48,8 +50,8 @@
 
       <section id="about">
         <div id="dabout">
-          <h1>About me</h1>
-          <p>
+          <h1 class="delaySmallReveal">About me</h1>
+          <p class="delaySmallReveal">
             As a passionate software engineer, I intensely seek to improve my
             knowledge in several areas, diversifying in the Front-end and
             gaining more affinity in the Back-end every day. <br /><br />
@@ -70,21 +72,49 @@
         </div>
       </section>
 
-      <section id="experience">
-        <div id="eexperience">
-          <h1>Experience</h1>
-          <p>Experiences</p>
-          <ion-icon name="logo-html5"></ion-icon>
-          <ion-icon name="logo-css3"></ion-icon>
-          <ion-icon name="logo-javascript"></ion-icon>
-          <ion-icon name="logo-github"></ion-icon>
-          <img width="15px" src="../assets/img/c-sharp.svg" alt="C#" />
+      <section id="s-experience">
+        <div id="experience">
+        <div class="grid-layout">
+          <h1 class="delaySmallReveal">Experiências</h1>
+          <div id="experience">
+            <div
+              class="option-experience intervalCardReveal"
+              id="experience-company"
+            >
+              <div class="company cristiano">
+                <h3>Cristiano Pinturas em Geral</h3>
+              </div>
+              <div class="company armazem activeExperience">
+                <h3>Armazém Drogaria</h3>
+              </div>
+              <div class="company uniube">
+                <h3>Uniube</h3>
+              </div>
+              <div class="company usina">
+                <h3>Usina Uberaba S/A</h3>
+              </div>
+            </div>
+            <div class="text-experience intervalCardReveal">
+              <div>
+                <h4 class="titleExperience">
+                  Sistemas de Informação
+                </h4>
+                <p class="dateExperience">Fev 2024 - o momento</p>
+              </div>
+              <h5 class="companyExperience">Uniube</h5>
+              <p class="changeExperience">
+                Estudando na Universidade de Uberaba, especificadamente no curso Sistemas de Informação, atualmente no 2º Período. Desenvolvendo técnicas e sistemas eficázes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
         </div>
       </section>
       <section id="projects">
         <div id="pprojects">
           <h1>Projects</h1>
-          <p>Projects</p>
+          <p>Projects Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto saepe, dicta debitis reprehenderit explicabo unde, at velit vitae non ad quisquam consequatur, sequi commodi doloribus nobis dolore illo facere error.</p><br>
           <ion-icon name="logo-html5"></ion-icon>
           <ion-icon name="logo-css3"></ion-icon>
           <ion-icon name="logo-javascript"></ion-icon>
@@ -94,7 +124,11 @@
       </section>
 
       <footer class="footer">
-        Coded in Visual Studio Code by &nbsp;<a href="https://github.com/pedrowpy/" target="_blank">@pedrowpy</a>. Built with HTML5 and CSS3.
+        Coded in Visual Studio Code by &nbsp;<a
+          href="https://github.com/pedrowpy/"
+          target="_blank"
+          >@pedrowpy</a
+        >. Built with HTML5 and CSS3.
       </footer>
       <div class="audio">
         <audio
@@ -112,6 +146,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="../scripts/script.js"></script>
+<script type="module" src="../scripts/script.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+
   </body>
 </html>

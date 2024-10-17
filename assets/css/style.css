@@ -22,34 +22,16 @@ body {
   justify-content: center;
   align-items: center; */
   height: 100vh;
-  opacity: 0;
-  filter: blur(10px);
+  opacity: 1;
+  filter: blur(0px);
   transition: opacity 0.3s ease-out, transform 0.3s ease-out,
     filter 0.3s ease-out;
-}
-
-body {
-  background-color: var(--background-color);
-  background-image: url(../img/mainte.png);
-  background-size: contain; /* Ajusta o tamanho da imagem sem cortá-la */
-  background-repeat: no-repeat; /* Evita a repetição da imagem */
-  background-position: center; /* Centraliza a imagem horizontal e verticalmente */
-  border: solid 1px yellow;
-  display: flex; /* Ativa o flexbox para centralização */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  height: 100vh;
-  opacity: 0;
-  filter: blur(10px);
-  transition: opacity 0.3s ease-out, transform 0.3s ease-out,
-    filter 0.3s ease-out;
-    z-index: 10000;
 }
 
 body.loaded {
   opacity: 1;
   transform: translateY(0);
-  filter: blur(2);
+  filter: blur(0);
 }
 
 #header-1 img {
@@ -70,7 +52,7 @@ body.loaded {
   top: 0;
   z-index: 1000;
   background-color: inherit; /* Mantém a cor de fundo atual */
-    background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
 }
@@ -142,12 +124,10 @@ button.navbutton-contact {
   color: black; /* Texto branco */
 }
 
-
-
 button.navbutton-contact:hover {
   background: var(--background-color);
-  border: 1.5px solid rgb(5, 5, 5);
-  color: var(--surface-color-hover);
+  border: 1.5px solid hsla(0, 0%, 0%, 0.842);
+  color: hsla(0, 0%, 100%, 0.842);
 }
 
 .topp {
@@ -225,7 +205,7 @@ button.navbutton-contact:hover {
   justify-content: center;
 }
 
-#eexperience {
+#experience {
   width: 100%;
   max-width: 706px;
   text-align: center;
@@ -240,7 +220,7 @@ button.navbutton-contact:hover {
   justify-content: center;
 }
 
-#pprojects{
+#pprojects {
   width: 100%;
   max-width: 706px;
   text-align: center;
@@ -249,10 +229,10 @@ button.navbutton-contact:hover {
 
 .audio {
   justify-content: center;
-display: flex;
-bottom: 0;
-opacity: 0.5;
-margin-top: 50px;
+  display: flex;
+  bottom: 0;
+  opacity: 0.5;
+  margin-top: 50px;
 }
 
 footer {
@@ -263,4 +243,99 @@ footer {
 
 h1 {
   text-transform: uppercase;
+  color: hsla(67, 100%, 50%, 0.842);
+  font-size: 45px;
+
+  }
+  
+  #dabout h1 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.grid-layout h1 {
+margin-top: 100px;
+margin-bottom: 30px;
+}
+
+#projects h1 {
+margin-top: 100px;
+margin-bottom: 30px;
+}
+
+h2 {
+background: rgb(131,58,180);
+background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(253,29,29,1) 50%, #e1ff00d7 100%);
+}
+
+#s-experience {
+  font-family: "Inter", sans-serif;
+  border: solid salmon 1px;
+  display: flex;
+  /* height: 100vh; */
+  justify-content: center;
+}
+
+#experience {
+  width: 100%;
+  max-width: 706px;
+  text-align: center;
+  border: solid salmon 1px;
+}
+
+#s-experience .grid-layout #experience .option-experience .activeExperience {
+  border-left: 4px solid #e1ff00d7;
+  color: hsla(67, 100%, 50%, 0.842);
+}
+#s-experience .grid-layout #experience .option-experience .activeExperience h3 {
+  font-weight: 600;
+}
+#s-experience .grid-layout #experience .option-experience > div {
+  padding: 8px 28px;
+  text-align: left;
+}
+#s-experience .grid-layout #experience .option-experience > div:hover {
+  cursor: pointer;
+}
+#s-experience .grid-layout #experience .option-experience > div h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+#s-experience .grid-layout #experience .text-experience {
+  width: 75%;
+  text-align: left;
+}
+@media screen and (max-width: 1200px) {
+  #s-experience .grid-layout #experience .text-experience {
+    width: 100%;
+  }
+}
+#s-experience .grid-layout #experience .text-experience > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#s-experience .grid-layout #experience .text-experience > div h4 {
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+#s-experience .grid-layout #experience .text-experience > div p {
+  font-size: 10px;
+  color: #9ca3af;
+}
+#s-experience .grid-layout #experience .text-experience h5 {
+  font-size: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: hsla(67, 100%, 50%, 0.842);
+  text-align: right;
+
+}
+#s-experience .grid-layout #experience .text-experience p {
+  font-size: 14px;
+  line-height: 160%;
+  color: var(--surface-color-hover);
+  font-weight: 400;
 }
