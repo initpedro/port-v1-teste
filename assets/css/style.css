@@ -46,7 +46,7 @@ body.loaded {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   font-family: "Poppins", sans-serif;
   position: sticky;
   top: 0;
@@ -69,7 +69,7 @@ main {
   width: 100%;
   flex-direction: column;
   text-align: center;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 
   display: flex;
   align-items: center;
@@ -184,7 +184,7 @@ button.navbutton-contact:hover {
 
 #about {
   font-family: "Inter", sans-serif;
-  border: solid salmon 1px;
+  /* border: solid salmon 1px; */
   display: flex;
   /* height: 100vh; */
   justify-content: center;
@@ -194,12 +194,12 @@ button.navbutton-contact:hover {
   width: 100%;
   max-width: 706px;
   text-align: center;
-  border: solid salmon 1px;
+  /* border: solid salmon 1px; */
 }
 
 #experience {
   font-family: "Inter", sans-serif;
-  border: solid salmon 1px;
+  /* border: solid salmon 1px; */
   display: flex;
   /* height: 100vh; */
   justify-content: center;
@@ -209,12 +209,12 @@ button.navbutton-contact:hover {
   width: 100%;
   max-width: 706px;
   text-align: center;
-  border: solid salmon 1px;
+  /* border: solid salmon 1px; */
 }
 
 #projects {
   font-family: "Inter", sans-serif;
-  border: solid salmon 1px;
+  /* border: solid salmon 1px; */
   display: flex;
   /* height: 100vh; */
   justify-content: center;
@@ -224,7 +224,7 @@ button.navbutton-contact:hover {
   width: 100%;
   max-width: 706px;
   text-align: center;
-  border: solid salmon 1px;
+  /* border: solid salmon 1px; */
 }
 
 .audio {
@@ -270,7 +270,7 @@ background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(253,29,29,1) 50%,
 
 #s-experience {
   font-family: "Inter", sans-serif;
-  border: solid salmon 1px;
+  /* border: solid salmon 1px; */
   display: flex;
   /* height: 100vh; */
   justify-content: center;
@@ -280,7 +280,7 @@ background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(253,29,29,1) 50%,
   width: 100%;
   max-width: 706px;
   text-align: center;
-  border: solid salmon 1px;
+  /* border: solid salmon 1px; */
 }
 
 #s-experience .grid-layout #experience .option-experience .activeExperience {
