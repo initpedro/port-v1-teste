@@ -17,7 +17,11 @@ body {
   background-color: var(--background-color);
   background-image: url(../img/linhas.svg);
   background-size: cover;
+
+  /* border: solid 1px yellow;
   border: solid 1px yellow;
+  border: solid 1px yellow;
+  border: solid 1px yellow; */
   height: 100vh;
   opacity: 1;
   filter: blur(0px);
