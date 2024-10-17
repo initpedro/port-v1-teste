@@ -83,14 +83,39 @@ button.contact {
   -webkit-backdrop-filter: blur(4px);
 }
 
+
 button.contact:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid rgb(5, 5, 5);
   color: var(--background-color);
 }
 
+button.repositories {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 10px;
+  cursor: pointer;
+  border-radius: 75px;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  margin-bottom: 28px;
+}
+
+button.repositories:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid rgb(5, 5, 5);
+  color: var(--background-color);
+    transform: scale(1.05);
+  opacity: 0.9;
+}
+
+
 button.navbutton-about,
-button.navbutton-contact {
+button.navbutton-contact,
+button.navbutton-repositories {
   padding: 7px 15px;
   font-size: 13px;
   cursor: pointer;
@@ -99,12 +124,21 @@ button.navbutton-contact {
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-button.navbutton-about {
+button.navbutton-about,
+button.navbutton-repositories {
   background-color: black;
   color: white;
 }
 
 button.navbutton-about:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid rgb(5, 5, 5);
+  color: var(--background-color);
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+button.navbutton-repositories:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid rgb(5, 5, 5);
   color: var(--background-color);
@@ -172,6 +206,12 @@ button.navbutton-contact:hover {
   width: 100%;
   max-width: 706px;
   text-align: center;
+  font-size: 17px;
+}
+
+#pprojects p {
+  font-size: 17px;
+  margin-bottom: 10px;
 }
 
 #experience,
@@ -200,6 +240,8 @@ footer {
   justify-content: center;
   display: flex;
   font-family: "Inter", sans-serif;
+  margin-top: 100px;
+  margin-bottom: 30px;
 }
 
 h1 {
