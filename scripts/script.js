@@ -2,11 +2,8 @@ window.addEventListener("load", function () {
   document.body.classList.add("loaded")
 })
 
-audioElement.play()
-
 import { initScrollReveal } from "../scripts/scrollreveal.js"
 import { hoverChangeExperience } from "../scripts/chanexperience.js"
-
 
 initScrollReveal()
 
