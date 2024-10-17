@@ -2,10 +2,7 @@ window.addEventListener("load", function () {
   document.body.classList.add("loaded")
 })
 
-  window.onload = function() {
-    var audio = document.getElementById('meuAudio');
-    audio.play();
-  };
+audioElement.play()
 
 import { initScrollReveal } from "../scripts/scrollreveal.js"
 import { hoverChangeExperience } from "../scripts/chanexperience.js"
