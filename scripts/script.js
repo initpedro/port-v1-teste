@@ -2,6 +2,10 @@ window.addEventListener("load", function () {
   document.body.classList.add("loaded")
 })
 
+  window.onload = function() {
+    var audio = document.getElementById('meuAudio');
+    audio.play();
+  };
 
 import { initScrollReveal } from "../scripts/scrollreveal.js"
 import { hoverChangeExperience } from "../scripts/chanexperience.js"
@@ -42,5 +46,3 @@ window.addEventListener("load", function () {
     "2019 - 2023 (4 anos)"
   )
 })
-
-audioElement.play()
