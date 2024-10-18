@@ -40,3 +40,11 @@ window.addEventListener("load", function () {
     "2019 - 2023 (4 anos)"
   )
 })
+
+var typingEffect = new Typed(".multiText", {
+  strings: ["DEVELOPER", "SPECIALIST", "SOFTWARE ENGINER"],
+  loop: true,
+  typeSpeed: 75,
+  backSpeed: 80,
+  backDelay: 1500,
+})
