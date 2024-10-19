@@ -112,7 +112,8 @@ button.contact:hover {
 }
 
 /* /////////// */
-button.contact:before, button.repositories:before  {
+button.contact:before,
+button.repositories:before {
   content: "";
   position: absolute;
   top: -1px;
@@ -121,8 +122,14 @@ button.contact:before, button.repositories:before  {
   bottom: -1px;
   background: linear-gradient(
     45deg,
-    #FF0000, #FF7300, #FFFB00, #48FF00,
-    #00FFD5, #002BFF, #FF00C8, #FF0000
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #ff00c8,
+    #ff0000
   );
   background-size: 200%;
   filter: blur(20px);
@@ -144,7 +151,6 @@ button.repositories {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   margin-bottom: 28px;
-  
 }
 
 button.repositories:hover {
@@ -289,7 +295,7 @@ h2 {
 
 footer {
   justify-content: center;
-  display: flex;
+  text-align: center;
   font-family: "Inter", sans-serif;
   margin-top: 100px;
   margin-bottom: 30px;
@@ -467,9 +473,14 @@ header {
   transition: 0.8s ease;
 }
 
-
 @keyframes glowing {
-  0% {background-position: 0 0;}
-  50% {background-position: 400% 0;}
-  100% {background-position: 0 0;}
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
