@@ -4,6 +4,8 @@ window.addEventListener("load", function () {
 
 import { initScrollReveal } from "../scripts/scrollreveal.js"
 import { hoverChangeExperience } from "../scripts/chanexperience.js"
+import { hoverChangeDescription } from "../scripts/chandescription.js"
+
 
 initScrollReveal()
 
@@ -39,6 +41,20 @@ window.addEventListener("load", function () {
     "Cristiano Fonseca Pinturas em Geral",
     "2019 - 2023 (4 anos)"
   )
+
+  hoverChangeDescription(
+    ".html",
+    "HTML é uma linguagem de marcação, para definir quais informações a página vai exibir."
+  )
+  hoverChangeDescription(
+    ".css",
+    "CSS é uma linguagem de folha de estilo, criado com o propósito de estilizar as páginas."
+  )
+  hoverChangeDescription(
+    ".javascript",
+    "JavaScript é uma linguagem de programação que permite a você implementar elementos dinâmicos em páginas web."
+  )
+
 })
 
 var typingEffect = new Typed(".multiText", {
