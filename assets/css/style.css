@@ -727,3 +727,16 @@ hr {
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente */
 }
+
+#p p {
+  font-size: 10px;
+  max-width: 500px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#p {
+display: flex;
+justify-content: center;
+}
