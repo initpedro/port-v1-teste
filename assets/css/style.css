@@ -478,7 +478,7 @@ html {
   font-size: 62.5%;
 }
 
-html::selection { 
+::selection { 
 background-color: hsla(0, 0%, 100%, 0.842); 
 color: lightgreen; 
 }
