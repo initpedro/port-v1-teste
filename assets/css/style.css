@@ -478,6 +478,11 @@ html {
   font-size: 62.5%;
 }
 
+html::selection { 
+background-color: hsla(0, 0%, 100%, 0.842); 
+color: lightgreen; 
+}
+
 header {
   width: 100%;
   transition: 0.8s ease;
