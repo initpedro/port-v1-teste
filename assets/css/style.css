@@ -479,8 +479,8 @@ html {
 }
 
 ::selection { 
-background-color: hsla(0, 0%, 100%, 0.842); 
-color: lightgreen; 
+background-color: #C1DA03; 
+color: #fff; 
 }
 
 header {
