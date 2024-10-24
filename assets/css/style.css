@@ -37,6 +37,19 @@ body.loaded {
   filter: blur(0);
 }
 
+::-webkit-scrollbar {
+width:8px
+}
+
+::-webkit-scrollbar-track {
+background-color: #111 
+}
+
+::-webkit-scrollbar-thumb {
+background-color: #C1DA03;
+border-radius:8px
+}
+
 #header-1 img {
   width: 70px;
   height: 70px;
