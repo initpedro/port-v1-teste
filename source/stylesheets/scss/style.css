@@ -43,19 +43,18 @@
 
 @media screen and (max-width: 768px) {
   #home,
-  .s-home,
   .ss-home,
-  #sss-home,
-  #dabout,
-  #experience,
-  #projects,
-  article {
+  #dabout {
     display: flex; /* Use flex para alinhar os elementos */
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
     margin: 0 auto; /* Centralize o conteúdo, se necessário */
+      word-wrap: break-word; /* Permite que as palavras grandes quebrem para a próxima linha */
+  word-break: break-word; /* Garante que palavras longas sejam quebradas, evitando o overflow */
+  white-space: normal; /* Permite múltiplas linhas */
+     width: 100%;
   }
 }
 
@@ -845,3 +844,53 @@ hr {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/*****************************/
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  #home,
+  .ss-home {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+
+  #sss-home h1 {
+    font-size: 2rem;
+  }
+
+  #sss-home h2 {
+    font-size: 1.2rem;
+  }
+
+  #sss-home p {
+    font-size: 1rem;
+  }
+
+  .contact {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+
+/* Ajuste para telas muito pequenas */
+@media screen and (max-width: 480px) {
+  #sss-home h1 {
+    font-size: 4rem;
+  }
+
+  #sss-home h2 {
+    font-size: 2rem;
+  }
+
+  #sss-home p {
+    font-size: 1.3rem;
+  }
+
+  .contact {
+    font-size: 1.3rem;
+    padding: 6px 10px;
+  }
+}
+
+/**/

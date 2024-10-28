@@ -55,10 +55,14 @@
     display: flex; /* Use flex para alinhar os elementos */
     flex-direction: column;
     width: 100%;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     margin: 0 auto; /* Centralize o conteúdo, se necessário */
   }
+}
+
+@media screen and (max-width: 1020px) {
+
 }
 
 body {
