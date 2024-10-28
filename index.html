@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio // Pedro Fonseca</title>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link
       rel="shortcut icon"
-      href="./assets/img/ghost.svg"
+      href="./source/images/ghost.svg"
       type="image"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="stylesheet" href="./source/stylesheets/scss/style.css" />
   </head>
   <body>
-    <!-- <img src="../assets/img/linhas.svg" alt="backlines" /> -->
     <main>
+ 
       <div id="header-1">
-        <a href="index.html"
+        <a href="./source/pages/index.html"
           ><img src="https://i.ibb.co/2ZFPznh/asd.png" alt="pedrosizelogo"
         /></a>
         <nav>
@@ -32,23 +37,29 @@
             ></a>
         </nav>
       </div>
+
       <section id="home">
       <div class="intervalCardReveal" id="header-2">
-        <div class="topp">
-          <img class="intervalCardReveal" src="./assets/img/memoji1.png" alt="memoji1" />
+        <div class="s-home">
+          <div class="ss-home">
+          <img class="intervalCardReveal" src="./source/images/profile-nobg2.png" alt="profile-pedro" />
+          <div id="sss-home">
           <h1 class="intervalCardReveal">Prazer, Pedro, <br><span class="multiText"></span></h1>
           <h2 class="intervalCardReveal">Code & Chill 👻</h2>
           <p class="intervalCardReveal">
-            Engenheiro de software apaixonado em desenvolvimento dedicado à criação de aplicativos eficazes
-          </p>
+            Engenheiro de software apaixonado em desenvolvimento <br> dedicado à criação de aplicativos eficazes
+            
           <div class="intervalCardReveal"><a href="https://wa.me/+5534998731732" target="_blank"
               ><button class="contact">Contate-me</button></div></a>
-          <div class="intervalCardReveal"><a href="./assets/img/curriculo-pedro.pdf" download="curriculo-pedro-pdf" target="_blank"
+          <div class="intervalCardReveal"><a href="./source/images/curriculo-pedro.pdf" download="curriculo-pedro-pdf" target="_blank"
               ><button class="contact">CV</button></div></a>
-              <hr class="intervalCardReveal none">
+              </p></div></div>
+            <!-- <hr class="intervalCardReveal none"> -->
         </div>
       </div>
       </section>
+<!-- <br> <br> <br> <br> <br> <br> -->
+      <div class="ccolor intervalCardReveal">
       <section id="about">
         <div id="dabout">
           <h1 class="intervalCardReveal">Sobre mim</h1>
@@ -62,23 +73,24 @@
             Atualmente, aprimorando meus conhecimentos para adquirir uma base sólida em
             JavaScript, CSS3 e HTML5. Além disso, tenho independência
             a estudos relacionados a C, C#, SQLServer, MySQL, SQLite, Git e GitHub
+            </div>
+            
+            
+            </p>
             <br />
             <br />
-
-
-          </p>
-          <div class="intervalCardReveal"><ion-icon name="logo-html5"></ion-icon>
-          <ion-icon name="logo-css3"></ion-icon>
-          <ion-icon name="logo-javascript"></ion-icon>
-          <ion-icon name="logo-github"></ion-icon>
-          <img width="16px" src="./assets/img/c-sharp.svg" alt="C#" /></div>
-              <hr class="intervalCardReveal none">
+              <!-- <div class="intervalCardReveal"><ion-icon name="logo-html5"></ion-icon>
+              <ion-icon name="logo-css3"></ion-icon>
+              <ion-icon name="logo-javascript"></ion-icon>
+              <ion-icon name="logo-github"></ion-icon>
+              <img width="16px" src="../images/c-sharp.svg" alt="C#" /></div> -->
+              <!-- <hr class="intervalCardReveal none"> -->
         </div>
       </section>
-
+<br>
       
-
       <section id="s-experience">
+        <div class="ccolor intervalCardReveal">
         <div id="experience">
         <div class="grid-layout">
           <h1 class="intervalCardReveal">Experiências</h1>
@@ -113,11 +125,15 @@
               </p>
             </div>
           </div>
-              <hr class="intervalCardReveal none">
+              <!-- <hr class="intervalCardReveal none"> -->
         </div>
       </section>
     </div>
+  </div>
+  <br>
+  <div class="ccolor intervalCardReveal">
     <section id="projects">
+
       <div id="pprojects">
         <h1 class="intervalCardReveal">Projetos</h1>
         <p class="intervalCardReveal">Abaixo estão alguns projetos que desenvolvi para aprimorar habilidades técnicas</p><br>
@@ -133,14 +149,14 @@
 
                 <a href="https://pedrowpy.github.io/rckst_settings_dev/" target="_blank"> 
                 <button class="btn">
-                     <img width="20px" src="./assets/img/octopus-deploy.svg" alt="">
+                     <img width="20px" src="./source/images/octopus-deploy.svg" alt="">
                      <!-- &nbsp;  -->
                       <!-- <b>deploy</b> -->
                     </button>
                   </a>
                                   <a href="https://github.com/pedrowpy/rckst_settings_dev" target="_blank"> 
                 <button class="btn">
-                     <img width="20px" src="./assets/img/g.svg" alt="">
+                     <img width="20px" src="./source/images/g.svg" alt="">
                      <!-- &nbsp;  -->
                       <!-- <b>repositorie</b> -->
                     </button>
@@ -155,14 +171,14 @@
 
                 <a href="https://github.com/pedrowpy/" target="_blank"> 
                 <button class="btn">
-                     <img width="20px" src="./assets/img/octopus-deploy.svg" alt="">
+                     <img width="20px" src="./source/images/octopus-deploy.svg" alt="">
                      <!-- &nbsp;  -->
                       <!-- <b>deploy</b> -->
                     </button>
                   </a>
                                   <a href="https://github.com/pedrowpy/" target="_blank"> 
                 <button class="btn">
-                     <img width="20px" src="./assets/img/g.svg" alt="">
+                     <img width="20px" src="./source/images/g.svg" alt="">
                      <!-- &nbsp;  -->
                       <!-- <b>repositorie</b> -->
                     </button>
@@ -177,14 +193,14 @@
 
                 <a href="https://github.com/pedrowpy/" target="_blank"> 
                 <button class="btn">
-                     <img width="20px" src="./assets/img/octopus-deploy.svg" alt="">
+                     <img width="20px" src="./source/images/octopus-deploy.svg" alt="">
                      <!-- &nbsp;  -->
                       <!-- <b>deploy</b> -->
                     </button>
                   </a>
                                   <a href="https://github.com/pedrowpy/" target="_blank"> 
                 <button class="btn">
-                     <img width="20px" src="./assets/img/g.svg" alt="">
+                     <img width="20px" src="./source/images/g.svg" alt="">
                      <!-- &nbsp;  -->
                       <!-- <b>repositorie</b> -->
                     </button>
@@ -193,24 +209,31 @@
             </article>
           </div>
         </div>
+      </div>
+    </div>
       </section>
-              <hr class="intervalCardReveal none">
+      <br>
+              <!-- <hr class="intervalCardReveal none"> -->
+                 <div class="ccolor intervalCardReveal">
                   <section id="final">
       <div id="ffinal">
         <h1 class="intervalCardReveal">Linguagens</h1>
-        <p class="intervalCardReveal">Estudos independentes realizados em diferentes linguagens de programação
+        <pp class="intervalCardReveal">Estudos independentes realizados em diferentes linguagens de programação
 </p><br>
       <section id="s-projects">
         <div class="grid-layout">
           <div id="projectss">
             <article class="html intervalCardReveal">
-<img src="./assets/img/html.svg" alt="">
+<img src="./source/images/html.svg" alt="">
             </article>
             <article class="css intervalCardReveal">
-<img src="./assets/img/css.svg" alt="">
+<img src="./source/images/css.svg" alt="">
             </article>
             <article class="javascript intervalCardReveal">
-<img src="./assets/img/javascript.svg" alt="">
+<img src="./source/images/javascript.svg" alt="">
+            </article>
+            <article class="sass intervalCardReveal">
+<img src="./source/images/sass-1.svg" alt="">
             </article>
             <!-- <article class="intervalCardReveal none nada">
 
@@ -225,7 +248,8 @@
       </section>
         </div>
       </section>
-      <hr class="intervalCardReveal none">
+      </div>
+      <!-- <hr class="intervalCardReveal none"> -->
 
       <footer class="footer">
         Coded in Visual Studio Code by &nbsp;<a
@@ -234,14 +258,19 @@
           >@pedrowpy</a
         >. <br>Built with Javascript, HTML5 and CSS3.
       </footer>
-      <div class="audio">
+      <!-- <div class="audio">
         <audio
           controls
           autoplay
           src="https://s10.w3bserver.com/radio/8160/stream?cache=1683387242904"
         ></audio>
-      </div>
+      </div> -->
     </main>
+
+
+
+
+    <!--  -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -250,8 +279,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-<script type="module" src="./scripts/script.js"></script>
-        <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script type="module" src="./source/scripts/main.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </body>
 </html>
