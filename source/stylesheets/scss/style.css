@@ -894,3 +894,43 @@ hr {
 }
 
 /**/
+
+#experience {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column; /* Certifica que os itens estão em coluna em telas menores */
+  justify-content: center;
+  align-items: center; /* Alinhamento central para melhor aparência */
+  width: 100%; /* Utiliza toda a largura disponível */
+  max-width: 1200px; /* Limita a largura máxima para telas grandes */
+  margin: auto; /* Centraliza o div */
+  padding: 20px; /* Adiciona um pouco de espaço interno */
+  box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+@media screen and (max-width: 768px) {
+  #experience {
+    flex-direction: column; /* Garante que os elementos se empilhem em coluna */
+    padding: 10px; /* Ajusta o padding para telas menores */
+  }
+
+  .companyExperience p {
+  max-width: 768px; /* Ou um valor como 600px, dependendo do design */
+  word-wrap: break-word; /* Quebra a palavra longa se necessário */
+}
+
+}
+
+#experience p {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que os filhos quebrem a linha */
+  width: 100%;
+  max-width: 100%; /* Garante que o elemento não ultrapasse a largura da tela */
+  padding: 20px; /* Adiciona um pouco de espaçamento interno */
+  box-sizing: border-box; /* Garante que padding não aumente a largura total */
+}
+
+/*****************************/
+
