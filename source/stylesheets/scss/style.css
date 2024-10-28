@@ -541,7 +541,7 @@ h2 {
 }
 
 #s-projects .grid-layout #projects {
-  display: inline-block;
+  /* display: inline-block; */
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
@@ -965,16 +965,11 @@ hr {
 
 @media screen and (max-width: 768px) {
   #s-projects #projectss {
-  font-family: "Inter", sans-serif;
-  display: flex;
-  flex-direction: column; /* Certifica que os itens estão em coluna em telas menores */
-  justify-content: center;
-  align-items: center; /* Alinhamento central para melhor aparência */
-  width: 100%; /* Utiliza toda a largura disponível */
-  max-width: 1200px; /* Limita a largura máxima para telas grandes */
-  margin: auto; /* Centraliza o div */
-  padding: 20px; /* Adiciona um pouco de espaço interno */
-  box-sizing: border-box; /* Inclui padding na largura total */
+  /* display: inline-block; */
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  text-align: left;
   }
 }
 
