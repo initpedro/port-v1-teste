@@ -49,8 +49,8 @@ body {
   /* background-image: url(../img/linhas.svg); */
   background-size: cover;
   background-color: #111111;
-  background-image: url(/source/images/fundo.png),
-    url(/source/images/linhas.svg);
+  background-image: url(./source/images/fundo.png),
+    url(./source/images/linhas.svg);
   backdrop-filter: blur(5px);
   position: sticky;
   /* border: solid 1px yellow;*/
