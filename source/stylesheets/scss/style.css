@@ -462,12 +462,10 @@ h2 {
   width: 100%;
   max-width: 706px;
   text-align: center;
-  min-width: 764.406px;
-  padding: 20px;
 }
 
 #s-experience .grid-layout #experience .option-experience .activeExperience {
-  border-left: 4px solid rgba(225, 255, 0, 0.8431372549);
+  border-left: 4px solid #e1ff00d7;
   color: hsla(67, 100%, 50%, 0.842);
 }
 
@@ -492,6 +490,12 @@ h2 {
 #s-experience .grid-layout #experience .text-experience {
   width: 75%;
   text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+  #s-experience .grid-layout #experience .text-experience {
+    width: 100%;
+  }
 }
 
 #s-experience .grid-layout #experience .text-experience > div {
@@ -528,15 +532,21 @@ h2 {
 
 #s-projects {
   text-align: center;
+  
+}
+@media screen and (max-width: 992px) {
+  #s-projects {
+    padding: 24px;
+  }
 }
 
 #s-projects .grid-layout #projects {
-  /* display: inline-block; */
-  display: flex;
+  display: inline-block;
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
   text-align: left;
+  
 }
 
 #s-projects .grid-layout #projects > article {
@@ -554,33 +564,36 @@ h2 {
 #s-projects .grid-layout #projects > article:hover {
   border: 1px solid hsla(67, 100%, 50%, 0.842);
 }
+/**/
 
 /**/
-/**/
+@media screen and (max-width: 1200px) {
+  #s-projects .grid-layout #projects > article {
+    flex-basis: calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 768px) {
+  #s-projects .grid-layout #projects > article {
+    flex-basis: calc(100% - 20px);
+  }
+}
 #s-projects .grid-layout #projects > article h3 {
   color: #fff;
   font-size: 2.4rem;
   font-weight: 500;
 }
-
 #s-projects .grid-layout #projects > article p {
   line-height: 24px;
-  margin: 10px 0px 0px 0px;
+  margin: 24px 0px 0px 0px;
   color: #9ca3af;
   line-height: 3.2rem;
   font-size: 1.8rem;
-  /************/
   max-width: 200px;
 }
 
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
-}
-
-::selection {
-  background-color: #c1da03;
-  color: #fff;
 }
 
 header {
@@ -599,19 +612,14 @@ header {
     background-position: 0 0;
   }
 }
-/*********<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*********/
 #s-projects .grid-layout #projects > article::before {
   content: "";
   background: linear-gradient(
     45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #ff00c8,
-    #ff0000
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
   );
   position: absolute;
   top: -2px;
@@ -619,28 +627,23 @@ header {
   background-size: 600%;
   z-index: -1;
   width: calc(100% + 4px);
-  height: calc(100% + 4px);
+  height:  calc(100% + 4px);
   filter: blur(8px);
   animation: glowing 20s linear infinite;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity .3s ease-in-out;
   /* border-radius: 10px; */
   opacity: 0;
 }
 
 @keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
 }
+
 /* hover */
 #s-projects .grid-layout #projects > article:hover::before {
-  opacity: 0.1;
+  opacity: 0.10;
 }
 
 #s-projects .grid-layout #projects > article:active:after {
@@ -651,6 +654,30 @@ header {
   color: #000;
   font-weight: bold;
 }
+
+article img {
+  vertical-align: middle;
+}
+
+article span {
+text-decoration-line: none;
+text-align: center;
+display: flex;
+justify-content: left;
+margin-top: 10px;
+}
+
+/***********************/
+
+
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+
+
 
 article img {
   vertical-align: middle;
@@ -895,7 +922,8 @@ hr {
 
 /**/
 
-#experience {
+@media screen and (max-width: 768px) {
+  #experience {
   font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column; /* Certifica que os itens estão em coluna em telas menores */
@@ -906,6 +934,7 @@ hr {
   margin: auto; /* Centraliza o div */
   padding: 20px; /* Adiciona um pouco de espaço interno */
   box-sizing: border-box; /* Inclui padding na largura total */
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -933,4 +962,19 @@ hr {
 }
 
 /*****************************/
+
+@media screen and (max-width: 768px) {
+  #s-projects #projectss {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column; /* Certifica que os itens estão em coluna em telas menores */
+  justify-content: center;
+  align-items: center; /* Alinhamento central para melhor aparência */
+  width: 100%; /* Utiliza toda a largura disponível */
+  max-width: 1200px; /* Limita a largura máxima para telas grandes */
+  margin: auto; /* Centraliza o div */
+  padding: 20px; /* Adiciona um pouco de espaço interno */
+  box-sizing: border-box; /* Inclui padding na largura total */
+  }
+}
 
