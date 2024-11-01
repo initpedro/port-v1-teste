@@ -19,8 +19,8 @@ body {
   filter: blur(0px);
   transition: opacity 0.3s ease-out, transform 0.3s ease-out,
     filter 0.3s ease-out;
-  background-image: url(../images/fundo4.png),
-    url(../images/linhas.svg);
+  background-image: url(..../source/images/fundo4.png),
+    url(..../source/images/linhas.svg);
   background-size: cover;
 }
 
@@ -114,6 +114,10 @@ body.loaded {
     margin-top: 10px;
   }
 
+  #s-header h2 {
+   margin: 0 90px;
+  }
+
   #s-header p {
     text-align: center;
     font-size: 14px;
@@ -145,9 +149,11 @@ body.loaded {
   font-size: 18px;
   position: sticky;
   top: 0;
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  -moz-backdrop-filter: blur(2px);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  -moz-backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.63); /* Fundo semitransparente */
+  z-index: 1;
 }
 
 nav {
@@ -360,7 +366,7 @@ footer {
   text-decoration: none;
 }
 
-/***************************************************/
+/****************************************************/
 
 #experience,
 #projects {
@@ -861,7 +867,6 @@ button.btn:hover {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Adicionado efeito de transição */
 }
 
-article img:hover,
 article b,
 btn:hover {
   content: "";
