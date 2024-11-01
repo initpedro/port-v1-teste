@@ -16,7 +16,7 @@ Portfólio criado para uso pessoal e controle de projetos.
 <br>
 
 <p align="center">
-  <img alt="projeto flutuar" src="https://i.ibb.co/CnTX8TJ/preview.png" width="100%">
+  <img alt="portfólio" src="https://i.ibb.co/y44tXbJ/banner.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
