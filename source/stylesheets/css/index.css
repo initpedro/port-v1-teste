@@ -19,8 +19,9 @@ body {
   filter: blur(0px);
   transition: opacity 0.3s ease-out, transform 0.3s ease-out,
     filter 0.3s ease-out;
-    background-image: url(.../images/fundo4.png), url(.../images/linhas.svg);
-    background-size: cover;
+  background-image: url(/source/images/fundo4.png),
+    url(/source/images/linhas.svg);
+  background-size: cover;
 }
 
 body.loaded {
@@ -54,63 +55,63 @@ body.loaded {
   }
 
   @media screen and (max-width: 768px) {
-  #experience {
-    font-family: "Inter", sans-serif;
-    display: flex;
-    flex-direction: column; /* Certifica que os itens estão em coluna em telas menores */
-    justify-content: center;
-    align-items: center; /* Alinhamento central para melhor aparência */
-    width: 100%; /* Utiliza toda a largura disponível */
-    max-width: 1200px; /* Limita a largura máxima para telas grandes */
-    margin: auto; /* Centraliza o div */
-    padding: 20px; /* Adiciona um pouco de espaço interno */
-    box-sizing: border-box; /* Inclui padding na largura total */
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #experience {
-    flex-direction: column; /* Garante que os elementos se empilhem em coluna */
-    padding: 10px; /* Ajusta o padding para telas menores */
+    #experience {
+      font-family: "Inter", sans-serif;
+      display: flex;
+      flex-direction: column; /* Certifica que os itens estão em coluna em telas menores */
+      justify-content: center;
+      align-items: center; /* Alinhamento central para melhor aparência */
+      width: 100%; /* Utiliza toda a largura disponível */
+      max-width: 1200px; /* Limita a largura máxima para telas grandes */
+      margin: auto; /* Centraliza o div */
+      padding: 20px; /* Adiciona um pouco de espaço interno */
+      box-sizing: border-box; /* Inclui padding na largura total */
+    }
   }
 
-  .companyExperience p {
-    max-width: 768px; /* Ou um valor como 600px, dependendo do design */
-    word-wrap: break-word; /* Quebra a palavra longa se necessário */
-  }
+  @media screen and (max-width: 768px) {
+    #experience {
+      flex-direction: column; /* Garante que os elementos se empilhem em coluna */
+      padding: 10px; /* Ajusta o padding para telas menores */
+    }
 
-  #experience,
-  #projects {
-    font-family: "Inter", sans-serif;
-    display: flex;
-    justify-content: center;
-    /* padding: 20px; */
-  }
+    .companyExperience p {
+      max-width: 768px; /* Ou um valor como 600px, dependendo do design */
+      word-wrap: break-word; /* Quebra a palavra longa se necessário */
+    }
 
-  #experience,
-  #pprojects {
-    width: 100%;
-    max-width: 706px;
-    text-align: center;
-  }
+    #experience,
+    #projects {
+      font-family: "Inter", sans-serif;
+      display: flex;
+      justify-content: center;
+      /* padding: 20px; */
+    }
 
-  #sss {
-    width: 100%;
-  }
+    #experience,
+    #pprojects {
+      width: 100%;
+      max-width: 706px;
+      text-align: center;
+    }
 
-  #experience p {
-    text-align: left;
-  }
+    #sss {
+      width: 100%;
+    }
 
-  h4 {
-    color: #ff0062;
-    font-weight: bold;
+    #experience p {
+      text-align: left;
+    }
+
+    h4 {
+      color: #ff0062;
+      font-weight: bold;
+    }
   }
-}
 
   #s-header h1 {
-text-align: center;
-margin-top: 10px;
+    text-align: center;
+    margin-top: 10px;
   }
 
   #s-header p {
@@ -194,7 +195,7 @@ nav button:hover {
 
 .navbutton-contact:hover {
   transform: scale(1.02);
-    background-color: #ff0062;
+  background-color: #ff0062;
   color: #ffffff;
   border: #ffffff;
 }
@@ -214,7 +215,7 @@ nav button:hover {
   background-color: rgba(250, 235, 215, 0.123);
   display: flex;
   /* border: 1px solid red; */
-  border: 1px solid #403F3C;
+  border: 1px solid #403f3c;
 }
 
 #s-header p {
@@ -226,7 +227,7 @@ nav button:hover {
 .layoutborder p {
   text-align: center;
   width: calc(100% - 20%);
-margin: 0;
+  margin: 0;
 }
 
 #s-header div {
@@ -313,57 +314,55 @@ footer {
   color: #ffffff;
 }
 
-  .button-orcer {
-    margin: auto;
-    padding: 16px 60px;
-    display: flex;
-    border-radius: 8px;
-    background-color: #ff0062;
-    font-weight: bold;
-    font-family: "Archivo";
-    font-size: 20px;
-    color: #ffffff;
-    transition: transform 0.2s ease, opacity 0.2s ease;
-    cursor: pointer;
+.button-orcer {
+  margin: auto;
+  padding: 16px 60px;
+  display: flex;
+  border-radius: 8px;
+  background-color: #ff0062;
+  font-weight: bold;
+  font-family: "Archivo";
+  font-size: 20px;
+  color: #ffffff;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  cursor: pointer;
   border: #ff0062;
-  }
+}
 
+.button-orcer:hover {
+  transform: scaleX(1.03); /* Infla para o lado ao passar o cursor */
+  background-color: #ff00627a;
+  color: #ffffff;
+}
 
-
-  .button-orcer:hover {
-    transform: scaleX(1.03); /* Infla para o lado ao passar o cursor */
-    background-color: #ff00627a;
-    color: #ffffff;
-  }
-
-    .button-repo {
-    margin: auto;
-    padding: 8px 30px;
-    display: flex;
-    border-radius: 8px;
-    background-color: #ff0062;
-    font-weight: 440;
-    font-family: "Archivo";
-    font-size: 10px;
-    color: #ffffff;
-    transition: transform 0.2s ease, opacity 0.2s ease;
-    cursor: pointer;
+.button-repo {
+  margin: auto;
+  padding: 8px 30px;
+  display: flex;
+  border-radius: 8px;
+  background-color: #ff0062;
+  font-weight: 440;
+  font-family: "Archivo";
+  font-size: 10px;
+  color: #ffffff;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  cursor: pointer;
   border: #ff0062;
-  }
+}
 
-  .button-repo:hover {
-    transform: scaleX(1.03); /* Infla para o lado ao passar o cursor */
-    background-color: #ff00627a;
-    color: #ffffff;
-  }
+.button-repo:hover {
+  transform: scaleX(1.03); /* Infla para o lado ao passar o cursor */
+  background-color: #ff00627a;
+  color: #ffffff;
+}
 
 .reve a {
   text-decoration: none;
 }
 
-  /****************************************************/
+/****************************************************/
 
-  #experience,
+#experience,
 #projects {
   font-family: "Inter", sans-serif;
   display: flex;
@@ -602,7 +601,6 @@ footer {
 
 #s-projects {
   text-align: center;
-  
 }
 @media screen and (max-width: 992px) {
   #s-projects {
@@ -616,7 +614,6 @@ footer {
   align-items: stretch;
   flex-wrap: wrap;
   text-align: left;
-  
 }
 
 #s-projects .grid-layout #projects > article {
@@ -664,8 +661,8 @@ footer {
 }
 
 #s-projects .grid-layout #projects article p {
-margin: 0 auto;
-padding-top: 10px;
+  margin: 0 auto;
+  padding-top: 10px;
 }
 
 html {
@@ -694,8 +691,14 @@ header {
   content: "";
   background: linear-gradient(
     45deg,
-    #FF0000, #FF7300, #FFFB00, #48FF00,
-    #00FFD5, #002BFF, #FF00C8, #FF0000
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #ff00c8,
+    #ff0000
   );
   position: absolute;
   top: -2px;
@@ -703,23 +706,29 @@ header {
   background-size: 600%;
   z-index: -1;
   width: calc(100% + 4px);
-  height:  calc(100% + 4px);
+  height: calc(100% + 4px);
   filter: blur(8px);
   animation: glowing 20s linear infinite;
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   /* border-radius: 10px; */
   opacity: 0;
 }
 
 @keyframes glowing {
-  0% {background-position: 0 0;}
-  50% {background-position: 400% 0;}
-  100% {background-position: 0 0;}
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 /* hover */
 #s-projects .grid-layout #projects > article:hover::before {
-  opacity: 0.10;
+  opacity: 0.1;
 }
 
 #s-projects .grid-layout #projects > article:active:after {
@@ -736,24 +745,26 @@ article img {
 }
 
 article span {
-text-decoration-line: none;
-text-align: center;
-display: flex;
-justify-content: left;
-margin-top: 10px;
+  text-decoration-line: none;
+  text-align: center;
+  display: flex;
+  justify-content: left;
+  margin-top: 10px;
 }
 
 /***********************/
 
-
-
 @keyframes glowing {
-  0% {background-position: 0 0;}
-  50% {background-position: 400% 0;}
-  100% {background-position: 0 0;}
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
-
-
 
 article img {
   vertical-align: middle;
@@ -848,7 +859,6 @@ button.btn:hover {
   transform: scale(1.05); /* Efeito de inflar */
   opacity: 0.7;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Adicionado efeito de transição */
-
 }
 
 article img:hover,
@@ -934,7 +944,6 @@ hr {
 #s-projects {
   align-items: center;
   margin: 0 auto;
-  
 }
 
 @media screen and (max-width: 768px) {
@@ -942,8 +951,8 @@ hr {
     text-align: center;
     margin: 0 auto;
     margin-top: 10px;
-   width: calc(100% + 4px);
-  height:  calc(100% + 4px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
     max-width: 100%;
   }
 }
@@ -959,16 +968,15 @@ hr {
     flex-basis: calc(100% - 20px);
     text-align: center;
     justify-content: center;
-      flex-basis: calc(33% - 20px);
+    flex-basis: calc(33% - 20px);
   }
 }
-
 
 #languages #s-projects .grid-layout article {
   max-width: 70px;
   max-height: 70px;
   gap: 10px;
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 50px;
