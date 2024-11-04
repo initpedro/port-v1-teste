@@ -13,7 +13,7 @@ html {
 
 body {
   font-family: "Archivo", sans-serif;
-  background-color: black;
+  /*background-color: black;*/
   opacity: 1;
   width: 100%;
   filter: blur(0px);
