@@ -13,14 +13,14 @@ html {
 
 body {
   font-family: "Archivo", sans-serif;
-  /*background-color: black;*/
+  background-color: black;
   opacity: 1;
   width: 100%;
   filter: blur(0px);
   transition: opacity 0.3s ease-out, transform 0.3s ease-out,
     filter 0.3s ease-out;
-  background-image: url(/source/images/fundo4.png),
-    url(/source/images/linhas.svg);
+  background-image: url(./source/images/fundo4.png),
+    url(./source/images/linhas.svg);
   background-size: cover;
 }
 
