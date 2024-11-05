@@ -692,7 +692,7 @@ header {
   }
 }
 
-/*********/
+/*******/
 #s-projects .grid-layout #projects > article::before {
   content: "";
   background: linear-gradient(
