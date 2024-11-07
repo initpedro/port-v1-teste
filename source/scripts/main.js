@@ -57,6 +57,10 @@ window.addEventListener("load", function () {
     ".sass",
     "Sass é uma linguagem de folha de estilos que é compilada para CSS, ele nos permite usar variáveis, aninhamentos, mixins e funções para escrever código de forma mais limpa, rápida e com mais aproveitamento."
   )
+    hoverChangeDescription(
+      ".csharp",
+      "C# (chamado de C Sharp) é uma linguagem de programação orientada a objetos, desenvolvida pela Microsoft, que permite a criação de aplicações robustas para a plataforma .NET, como softwares desktop, aplicativos web e jogos."
+    )
 })
 
 var typingEffect = new Typed(".multiText", {
