@@ -11,25 +11,6 @@ html {
   scroll-behavior: smooth;
 }
 
-#video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
-    z-index: 9999;
-    transition: opacity 1s ease; /* Transição suave de opacidade */
-}
-
-#main-content {
-    display: none;
-    padding: 20px;
-}
-
 body {
   font-family: "Archivo", sans-serif;
   background-color: black;
