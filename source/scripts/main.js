@@ -70,16 +70,3 @@ var typingEffect = new Typed(".multiText", {
   backSpeed: 80,
   backDelay: 1500,
 })
-
-const video = document.getElementById("loading-video");
-const mainContent = document.getElementById("main-content");
-const videoContainer = document.getElementById("video-container");
-
-video.addEventListener("ended", function() {
-    videoContainer.style.opacity = "0";
-
-    setTimeout(function() {
-        videoContainer.style.display = "none";
-        mainContent.style.display = "block";
-    }, 1000);
-});
