@@ -362,6 +362,11 @@ footer {
   color: #ffffff;
 }
 
+.reve {
+display: flex;
+margin: 0 auto;
+}
+
 .reve a {
   text-decoration: none;
 }
