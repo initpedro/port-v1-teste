@@ -20,7 +20,9 @@ body {
   transition: opacity 0.3s ease-out, transform 0.3s ease-out,
     filter 0.3s ease-out;
   background-image: url(https://iili.io/2N9VNe9.png),
-    url(https://iili.io/2N9WdmX.png);
+    url(https://iili.io/2N9WdmX.png),
+    url(https://i.postimg.cc/nzbpB3WD/2f006c5de08d67c0f7e9ca24ddbeb47b.jpg),
+    url(https://i.postimg.cc/FRBbTJj3/606b09705ae4a1a042a23b07b23d70e9-removebg-preview.png);
   background-size: cover;
 }
 
