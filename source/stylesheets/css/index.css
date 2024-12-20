@@ -201,9 +201,9 @@ nav button:hover {
 
 .navbutton-contact:hover {
   transform: scale(1.02);
-  background-color: #ff0062;
-  color: #ffffff;
-  border: #ffffff;
+  background-color: #8F9B2F;
+  color: #ffffff
+/*  border: #ffffff; */
 }
 
 #s-header div {
