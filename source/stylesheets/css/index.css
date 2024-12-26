@@ -274,6 +274,7 @@ h2 {
   );
   margin-top: 5px;
   font-size: 25px;
+  max-width: 450px;
 }
 
 #layoutblock img {
