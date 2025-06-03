@@ -1,4 +1,4 @@
-<h1 align="center"> 💻 Portfólio // Pedro Fonseca </h1>
+<h1 align="center"> 💻 Portfólio Disabled </h1>
 
 <p align="center">
 Portfólio criado para uso pessoal e controle de projetos. Primeira versão do projeto.
